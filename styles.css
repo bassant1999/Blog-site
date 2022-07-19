@@ -1,0 +1,255 @@
+
+/* CSS for All */
+body{
+    background-image: url('images/background.jpg');
+}
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*end of CSS for All*/
+
+/* Home page */
+
+/* CSS for header */
+.header{
+    width:100%;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 20px;
+    color: #f1f1f1;
+}
+.header h1{
+    font-weight: bold;
+}
+/* end of CSS for header */
+
+/* CSS for navigation bar*/
+.navbar{
+    background-color: aliceblue;
+    height:80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar> div {
+    background-color: #f1f1f1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+
+  }
+  @media screen and (max-width: 500px) {
+    .navbar{
+        height: fit-content;
+    }
+    .navbar> div {
+        width:100%;
+    }
+  }
+/* end of CSS for navigation bar*/
+
+/* CSS for images section */
+.images{
+    width:80%;
+    margin: 20px auto;
+    background-color: aliceblue;
+    padding-top: 30px;
+}
+.images img{
+    display: block;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+}
+.text{
+    text-align: center;
+}
+.text h1{
+    color: rgb(24, 2, 2);
+}
+/* end of CSS for images section */
+
+/* CSS for main section */
+.main{
+    width:80%;
+    margin: 20px auto;
+    background-color: aliceblue;
+}
+.main p{
+    text-align: center;
+    padding-top: 20px;
+}
+.main_container{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.main_container div{
+    padding: 5px;
+}
+@media screen and (max-width: 500px) {
+    .main_container {
+        flex-direction: column;
+    }
+    .main_container div img{
+        width: 100%;
+    }
+  }
+/* end of CSS for main section */
+
+/* blog page */
+
+/* CSS for main section */
+.main_blog{
+    width:80%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: aliceblue;
+    text-align: center;
+}
+.main_blog hr{
+    width:40%;
+    margin: 5px auto;
+    color: black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+.main_blog >a{
+    background-color: #f1f1f1;
+    border: 1px solid rgb(82, 80, 80);
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: bold;
+}
+.main_blog img{
+    display: block;
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog h2{
+    text-transform: uppercase;
+}
+.button{
+    padding: 10px;
+}
+
+.old_new{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.but{
+    padding: 10px;
+    height:fit-content;
+    margin: auto 10px;
+    border-radius: 12px;
+    background-color:white;
+    border: 1px solid rgb(44, 44, 143);
+    color: rgb(13, 79, 136);
+}
+/* end of CSS for main section */
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* CSS for footer */
+.foot{
+    background-color: aliceblue;
+    margin-top: 5px;
+}
+
+/* CSSS for Register page */
+.register_form {
+    background-color: aliceblue;
+    width: 70%;
+    margin: 0px auto;
+    padding: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.register_form h3{
+    text-align: center;
+}
+.register_form hr{
+    width:40%;
+    margin: 5px auto;
+    color: black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cont div{
+    padding: 10px;
+}
+.submit{
+    padding: 10px;
+}
+
+/* CSS for login */
+.login_form {
+    background-color: aliceblue;
+    width: 70%;
+    margin: 0px auto;
+    padding: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.login_form h3{
+    text-align: center;
+}
+.warning{
+    background-color: rgb(237, 143, 143);
+    color: rgb(133, 20, 20);
+    border: 1px solid rgb(133, 20, 20);
+    padding: 10px;
+}
+
+.success{
+    background-color: green;
+    color: rgb(6, 50, 40);
+    border: 1px solid rgb(40, 211, 18);
+    padding: 10px;
+}
+
+.login_form hr{
+    width:40%;
+    margin: 5px auto;
+    color: black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+.login_form form div, .login_form > form > input{
+    margin: 10px;
+}
+.login_form form a{
+    background-color: rgb(233, 230, 230);
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 20px;
+    color: gray;
+}
