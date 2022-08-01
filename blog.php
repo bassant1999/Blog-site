@@ -16,6 +16,7 @@ else{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Blog page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -34,9 +35,9 @@ else{
 
     <br>
     <!-- main section starts Here -->
-    <div class="main_blog">
+    <div class="container main_ main_blog">
         <hr>
-        <p>COMPANY BLOG</p>
+        <p>THE PERFECT CUP <strong> BLOG </strong></p>
         <a href ="logout.php"> LOG OUT </a>
         <hr>
 

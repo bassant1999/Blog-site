@@ -14,6 +14,9 @@ if(isset($_SESSION["login"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Login page</title>
     <link rel="stylesheet" href="styles.css">
 
@@ -30,19 +33,21 @@ if(isset($_SESSION["login"])) {
 
     <!-- login section start Here -->
     <div class="login_form">
-        <p class="warning">You must be logged in to view the blog.</p>
-        <p class="warning" style= "<?php echo"display:".$dis; ?>">Wrong mail or Wrong password</p>
+        <div class="alert alert-danger" role="alert"> You must be logged in to view the blog.</div>
+        <div class="alert alert-danger" role="alert"style= "<?php echo"display:".$dis; ?>">Wrong mail or Wrong password</div>
+        <!-- <p class="warning">You must be logged in to view the blog.</p> -->
+        <!-- <p class="warning" style= "<?php echo"display:".$dis; ?>">Wrong mail or Wrong password</p> -->
         <form  action="validation.php" method="post">
             <hr>
             <h3>LOGIN</h3>
             <hr>
             <div>
                 <label for="mail">Email Address:</label><br>
-                <input type="text"  name="mail" placeholder="email">
+                <input type="text"  name="mail" placeholder="email" size="50">
             </div>
             <div>
                 <label for="pwd">password:</label><br>
-                <input type="password"  name="pwd">
+                <input type="password"  name="pwd" size="50">
             </div>
             <input class ="submit" type="submit" value="Login">
             <br><br>
